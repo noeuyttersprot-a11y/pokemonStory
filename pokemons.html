@@ -1,134 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <style>
-    table, th, td {
-  border: 1px  light gray;
-  border-collapse: collapse;
-}
-  </style>
-<title>pokémons</title>
+	<meta charset="UTF-8">
+	<title>Pokémons</title>
+	<style>
+		* {
+			font-family: verdana;
+		}
+		a:any-link {
+			text-decoration-line: none;
+			color: black;
+		}
+		body {
+			max-width: 980px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		body#background {
+			background-image: url("img/001.png");
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		#banner {
+			width: 100%;
+		}
+		.bar {
+			background-color: #F7DA5C;
+		}
+		.bar p {
+			margin: 0px;
+			padding: 10px 0px;
+			text-align: center;
+		}
+
+		/* TABEL STIJLEN */
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		table, th, td {
+			border: 1px solid lightgray;
+		}
+		th, td {
+			padding: 10px;
+		}
+
+		/* KLASSEN VOOR UITLIJNING */
+		.rechts {
+			text-align: right;
+		}
+		.gecentreerd {
+			text-align: center;
+		}
+
+		/* AFBEELDING AFMETINGEN */
+		.img-pokemon {
+			width: 40px;
+			height: 40px;
+		}
+		.img-type {
+			width: 16px;
+			height: 16px;
+		}
+	</style>
 </head>
 <body>
-  <img src="banner.png" alt="pokemon banner">
-<div class="body achtergrond-geel">
-  <p><a href="#pokémons">story — pokémons — types</a></p>
-  
-</div>
-<h2 id="The Pokémons ⚡️🔥☠️🪽🪲🧚‍♀️💧">TThe Pokémons ⚡️🔥☠️🪽🪲🧚‍♀️💧
-</h2>
-  
-</div>
 
+	<!-- HOOFDING -->
+	<img src="banner.png" id="banner" alt="Pokémon Banner">
+	
+	<div class="bar">
+		<p>
+			<a href="index.html">story</a> — 
+			<a href="pokemons.html">pokémons</a> — 
+			<a href="types.html">types</a>
+		</p>
+	</div>
+	<!-- EINDE HOOFDING -->
 
-<table>
-  <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>afbeelding</th>
-    <th>Type1</th>
-    <th>Type2</th>
-    <th>HP</th>
-    <th>Speed</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Bulbasaur</td>
-    <td>Ivysaur</td>
-    <td>Venusaur</td>
-    <td>Charmander</td>
-    <td>Charmeleon</td>
-    <td>Charizard</td>
-    <td>Squirtle</td>
-    <td>Wartortle</td>
-    <td>Blastoise</td>
-    <td>Caterpie</td>
-  </tr>
-  <tr>
-    <td>Bulbasaur</td>
-    <td>Ivysaur</td>
-    <td>Venusaur</td>
-    <td>Charmander</td>
-    <td>Charmeleon</td>
-    <td>Charizard</td>
-    <td>Squirtle</td>
-    <td>Wartortle</td>
-    <td>Blastoise</td>
-    <td>Caterpie</td>
-  </tr>
-  <tr>
-    <td>Grass</td>
-     <td>Grass</td>
-     <td>Grass</td>
-    <td>fire</td>
-     <td>fire</td>
-     <td>fire</td>
-    <td>water</td>
-    <td>water</td>
-    <td>water</td>
-    <td>bug</td>
-  </tr>
-  <tr>
-    <td>poison</td>
-    <td>poison</td>
-    <td>poison</td>
-    <td></td>
-    <td></td>
-    <td>flying</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Bulbasaur</td>
-    <td>Ivysaur</td>
-    <td>Venusaur</td>
-    <td>Charmander</td>
-    <td>Charmeleon</td>
-    <td>Charizard</td>
-    <td>Squirtle</td>
-    <td>Wartortle</td>
-    <td>Blastoise</td>
-    <td>Caterpie</td>
-  </tr>
-  <tr>
-    <td>45</td>
-    <td>60</td>
-    <td>80</td>
-    <td>39</td>
-    <td>58</td>
-    <td>78</td>
-    <td>44</td>
-    <td>59</td>
-    <td>79</td>
-    <td>45</td>
-  </tr> 
-  <tr>
-    <td>45</td>
-    <td>60</td>
-    <td>80</td>
-    <td>65</td>
-    <td>80</td>
-    <td>100</td>
-    <td>43</td>
-    <td>58</td>
-    <td>78</td>
-    <td>45</td>
-  </tr>
-</table>
+	<h2>The Pokémons ⚡️🔥☠️🪽🪲🧚‍♀️💧</h2>
+
+	<table>
+		<tr>
+			<th class="rechts">ID</th>
+			<th>Name</th>
+			<th class="gecentreerd">Afbeelding</th>
+			<th class="gecentreerd">Type1</th>
+			<th class="gecentreerd">Type2</th>
+			<th class="rechts">HP</th>
+			<th class="rechts">Speed</th>
+		</tr>
+		<tr>
+			<td class="rechts">1</td>
+			<td>Bulbasaur</td>
+			<td class="gecentreerd"><img src="001.png" alt="Bulbasaur" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="grass.svg" alt="Grass" class="img-type"></td>
+			<td class="gecentreerd"><img src="poison.svg" alt="Poison" class="img-type"></td>
+			<td class="rechts">45</td>
+			<td class="rechts">45</td>
+		</tr>
+		<tr>
+			<td class="rechts">2</td>
+			<td>Ivysaur</td>
+			<td class="gecentreerd"><img src="002.png" alt="Ivysaur" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="grass.svg" alt="Grass" class="img-type"></td>
+			<td class="gecentreerd"><img src="poison.svg" alt="Poison" class="img-type"></td>
+			<td class="rechts">60</td>
+			<td class="rechts">60</td>
+		</tr>
+		<tr>
+			<td class="rechts">3</td>
+			<td>Venusaur</td>
+			<td class="gecentreerd"><img src="003.png" alt="Venusaur" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="grass.svg" alt="Grass" class="img-type"></td>
+			<td class="gecentreerd"><img src="poison.svg" alt="Poison" class="img-type"></td>
+			<td class="rechts">80</td>
+			<td class="rechts">80</td>
+		</tr>
+		<tr>
+			<td class="rechts">4</td>
+			<td>Charmander</td>
+			<td class="gecentreerd"><img src="004.png" alt="Charmander" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="fire.svg" alt="Fire" class="img-type"></td>
+			<td class="gecentreerd"></td>
+			<td class="rechts">39</td>
+			<td class="rechts">65</td>
+		</tr>
+		<tr>
+			<td class="rechts">5</td>
+			<td>Charmeleon</td>
+			<td class="gecentreerd"><img src="005.png" alt="Charmeleon" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="fire.svg" alt="Fire" class="img-type"></td>
+			<td class="gecentreerd"></td>
+			<td class="rechts">58</td>
+			<td class="rechts">80</td>
+		</tr>
+		<tr>
+			<td class="rechts">6</td>
+			<td>Charizard</td>
+			<td class="gecentreerd"><img src="006.png" alt="Charizard" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="fire.svg" alt="Fire" class="img-type"></td>
+			<td class="gecentreerd"><img src="flying.svg" alt="Flying" class="img-type"></td>
+			<td class="rechts">78</td>
+			<td class="rechts">100</td>
+		</tr>
+		<tr>
+			<td class="rechts">7</td>
+			<td>Squirtle</td>
+			<td class="gecentreerd"><img src="007.png" alt="Squirtle" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="water.svg" alt="Water" class="img-type"></td>
+			<td class="gecentreerd"></td>
+			<td class="rechts">44</td>
+			<td class="rechts">43</td>
+		</tr>
+		<tr>
+			<td class="rechts">8</td>
+			<td>Wartortle</td>
+			<td class="gecentreerd"><img src="008.png" alt="Wartortle" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="water.svg" alt="Water" class="img-type"></td>
+			<td class="gecentreerd"></td>
+			<td class="rechts">59</td>
+			<td class="rechts">58</td>
+		</tr>
+		<tr>
+			<td class="rechts">9</td>
+			<td>Blastoise</td>
+			<td class="gecentreerd"><img src="009.png" alt="Blastoise" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="water.svg" alt="Water" class="img-type"></td>
+			<td class="gecentreerd"></td>
+			<td class="rechts">79</td>
+			<td class="rechts">78</td>
+		</tr>
+		<tr>
+			<td class="rechts">10</td>
+			<td>Caterpie</td>
+			<td class="gecentreerd"><img src="010.png" alt="Caterpie" class="img-pokemon"></td>
+			<td class="gecentreerd"><img src="bug.svg" alt="Bug" class="img-type"></td>
+			<td class="gecentreerd"></td>
+			<td class="rechts">45</td>
+			<td class="rechts">45</td>
+		</tr>
+	</table>
+
 </body>
 </html>
 
