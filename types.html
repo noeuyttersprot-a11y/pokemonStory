@@ -1,32 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Types</title>
+	<meta charset="UTF-8">
+	<title>Pokémon - Types</title>
+	<style>
+		* {
+			font-family: verdana;
+		}
+		a:any-link {
+			text-decoration-line: none;
+			color: black;
+		}
+		body {
+			max-width: 980px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#banner {
+			width: 100%;
+		}
+		.bar {
+			background-color: #F7DA5C;
+		}
+		.bar p {
+			margin: 0px;
+			padding: 10px 0px;
+			text-align: center;
+		}
+
+		/* AFBEELDING TYPING & DRIJVEN */
+		.img-type {
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+		}
+		.rechts-drijven {
+			float: right;
+			max-width: 200px;
+		}
+
+		/* CLEARFIX VOOR ELEMENTEN NA HET ZWEVENDE ELEMENT */
+		.clear {
+			clear: both;
+		}
+	</style>
 </head>
 <body>
 
-<h1>The Pokémon Types ⚡🔥☠️🪽🪲🧚‍♀️💧</h1>
-<ol>
- <li>Normal</li>
- <li>fire</li>
- <li>water</li>
-  <li>electric</li>
-  <li>grass</li>
-  <li>ice</li>
-  <li>fighting</li>
-  <li>poison</li>
-  <li>ground</li>
-  <li>flying</li>
-  <li>psychic</li>
-  <li>bug</li>
-  <li>rock</li>
-  <li>ghost</li>
-  <li>dragon</li>
-  <li>dark</li>
-  <li>steel</li>
-  <li>fairy</li>
+	<!-- HOOFDING -->
+	<img src="banner.png" id="banner" alt="Pokémon Banner">
+	
+	<div class="bar">
+		<p>
+			<a href="index.html">story</a> — 
+			<a href="pokemons.html">pokémons</a> — 
+			<a href="types.html">types</a>
+		</p>
+	</div>
+	<!-- EINDE HOOFDING -->
 
-</ol> 
+	<h2>The Pokémon types ⚡️🔥☠️🪽🪲🧚‍♀️💧</h2>
+
+	<!-- RECHTS ZWEVENDE POKÉMON -->
+	<img src="005.png" alt="Charmeleon" class="rechts-drijven">
+
+	<!-- GEORDENDE LIJST MET TYPES -->
+	<ol>
+		<li><img src="normal.svg" alt="Normal" class="img-type"> Normal</li>
+		<li><img src="fire.svg" alt="Fire" class="img-type"> Fire</li>
+		<li><img src="water.svg" alt="Water" class="img-type"> Water</li>
+		<li><img src="electric.svg" alt="Electric" class="img-type"> Electric</li>
+		<li><img src="grass.svg" alt="Grass" class="img-type"> Grass</li>
+		<li><img src="ice.svg" alt="Ice" class="img-type"> Ice</li>
+		<li><img src="fighting.svg" alt="Fighting" class="img-type"> Fighting</li>
+		<li><img src="poison.svg" alt="Poison" class="img-type"> Poison</li>
+		<li><img src="ground.svg" alt="Ground" class="img-type"> Ground</li>
+		<li><img src="flying.svg" alt="Flying" class="img-type"> Flying</li>
+		<li><img src="psychic.svg" alt="Psychic" class="img-type"> Psychic</li>
+		<li><img src="bug.svg" alt="Bug" class="img-type"> Bug</li>
+		<li><img src="rock.svg" alt="Rock" class="img-type"> Rock</li>
+		<li><img src="ghost.svg" alt="Ghost" class="img-type"> Ghost</li>
+		<li><img src="dragon.svg" alt="Dragon" class="img-type"> Dragon</li>
+		<li><img src="dark.svg" alt="Dark" class="img-type"> Dark</li>
+		<li><img src="steel.svg" alt="Steel" class="img-type"> Steel</li>
+		<li><img src="fairy.svg" alt="Fairy" class="img-type"> Fairy</li>
+	</ol>
+
+	<div class="clear"></div>
+
+	<!-- VOETTEKST (FOOTER) -->
+	<div class="bar">
+		<p>(c) 2026 by noeuyttersprot-a11y.com</p>
+	</div>
 
 </body>
 </html>
